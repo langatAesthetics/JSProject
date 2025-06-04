@@ -3,9 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Website</title>
+    <link rel="stylesheet" href="Main.css">
 </head>
 <body>
-    <h1> Hello wORLD</h1>
+    <div class="site-header">
+        <div class="logo">lAesthetics</div>
+        <!-- Hamburger icon -->
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="hero">
+        <div><img src="#" alt="Image"></div>
+        <div>
+            <h1>Hell0 wElc0me to My Site</h1>
+            <button class="btn">b00k</button>
+        </div>
+    </div>
+    <div id="About">
+        <h2>About Us</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, reprehenderit? Aliquid quibusdam consequuntur laboriosam sit libero repellat accusantium repudiandae optio dolor, magni cumque at non incidunt, natus amet magnam voluptates.</p>
+    </div>
+    <div id="Services">
+        <h2>Our Services</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, reprehenderit? Aliquid quibusdam consequuntur laboriosam sit libero repellat accusantium repudiandae optio dolor, magni cumque at non incidunt, natus amet magnam voluptates.</p>
+    </div>
+    <div id="Contact Us">
+        <h2>Contact Us Us</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, reprehenderit? Aliquid quibusdam consequuntur laboriosam sit libero repellat accusantium repudiandae optio dolor, magni cumque at non incidunt, natus amet magnam voluptates.</p>
+    </div>
+    <script>
+    function toggleMenu() {
+      document.querySelector('.navbar').classList.toggle('show');
+    }
+    </script>
 </body>
 </html>
